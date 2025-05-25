@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="script" href="scripts.js">
+        <meta charset="UTF-8">
+        <meta name="viewport" width="device-width ,inital-scale=1.0">
+    </head>
+    <body>
+         <audio id="a1" src="songs/1.mp3"></audio>
+                <audio id="a2" src="songs/2.mp3"></audio>
+                <audio id="a3" src="songs/3.mp3"></audio>
+                <audio id="a4" src="songs/4.mp3"></audio>
+                <audio id="a5" src="songs/5.mp3"></audio>
+                <audio id="a6" src="songs/6.mp3"></audio>
+                <audio id="a7" src="songs/7.mp3"></audio>
+                <audio id="a8" src="songs/8.mp3"></audio>
+                <audio id="a9" src="songs/9.mp3"></audio>
+                <audio id="a0" src="songs/0.mp3"></audio>
+                <audio id="adot" src="songs/dot.mp3"></audio>
+                <audio id="aplus" src="songs/plus.mp3"></audio>
+                <audio id="aminus" src="songs/minus.mp3"></audio>
+                <audio id="across" src="songs/cross.mp3"></audio>
+                <audio id="asari" src="songs/sari.mp3"></audio>
+                <audio id="athavaru" src="songs/thavaru.mp3"></audio>
+               
+        <h1 id ="summa">ATHANDA ITHANDA CALCULATOR NAAN THAN DA</h1>
+        <div class="calculator">
+        <div class="display">
+        <video id="thappuney" src="videos/thappuney.mp4"></video>
+         <h3 id="displaytext"></h3>
+        </div>
+        <div class="input">
+            <H1>SURA CALCULATOR</H1>
+                <div class="row">
+                <button class="inputbutton" id="1" onclick="clicked1()">1</button>
+                <button class="inputbutton" id="2"  onclick="clicked2()" >2</button>
+                <button class="inputbutton" id="3"  onclick="clicked3()">3</button>
+                <button class="inputbutton" id="+"  onclick="clickedplus()">+</button>
+                <button class="inputbutton" id="-"  onclick="clickedminus()">-</button>
+                
+                </div>
+                <div class="row">
+                    <button class="inputbutton" id="4"  onclick="clicked4()">4</button>
+                    <button class="inputbutton" id="5"  onclick="clicked5()">5</button>
+                    <button class="inputbutton" id="6"  onclick="clicked6()">6</button>
+                    <button class="inputbutton" id="X"  onclick="clickedmultiply()">X</button>
+                    <button class="inputbutton" id="/"   onclick="clickeddivide()">/</button>
+                </div>
+                <div class="row">
+                    <button class="inputbutton" id="7"  onclick="clicked7()">7</button>
+                    <button class="inputbutton" id="8"  onclick="clicked8()">8</button>
+                    <button class="inputbutton" id="9"  onclick="clicked9()">9</button>
+                    <button class="inputbutton" id="0"  onclick="clicked0()">.</button>
+                    <button class="inputbutton"  id="00" onclick="clicked00()">0</button>
+                </div>
+                <div class="equal">
+                     <button class="resetbutton" id ="resetbutton" onclick= "clickedreset()">AC</button> 
+                     <button class="equalbutton" id="equalbutton"  onclick="clickedequal()" >=</button>
+                               
+                </div>
+              
+        </div> 
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

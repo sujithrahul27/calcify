@@ -1,0 +1,129 @@
+h1{
+    color:red;
+    text-align: center;
+}
+.display{
+    margin-left: 24%;
+    width:500px;
+    height: 100px;
+    background-color: darkgreen;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    overflow: hidden;
+}
+.input{
+    width: 500px;
+    height: 500px;
+    border: 5px black solid;
+    margin-left: 24%;
+    background-color: black;
+    opacity: 90%;
+}
+.row{
+    width: 500px;
+    height: 10px;
+    margin-bottom: 100px;
+    margin-left: 35px;
+}
+.inputbutton{
+    margin-right: 10px;
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border: 1px white solid;
+    cursor : pointer;
+    transform: background-color 0.3 ease,scale 0.3 ease;
+
+}
+.equalbutton{
+    margin-left: 30px;
+    width: 150px;
+    height: 75px;
+    font-size: x-large;
+    background-color: green;
+    color: white;
+    border: 1px white solid;
+    cursor : pointer;
+    transition: background-color 0.3 ease,scale 0.3 ease;
+    border-radius: 3px;
+    display: inline;
+}
+.resetbutton{
+     margin-left: 75px;
+    width: 150px;
+    height: 75px;
+    font-size: large;
+    background-color: red;
+    color: white;
+    border: 1px white solid;
+    cursor : pointer;
+    transition: background-color 0.3 ease,scale 0.3 ease;
+    border-radius: 3px;
+    display: inline;
+}
+.resetbutton:hover{
+     background-color: aliceblue;
+    color: black;
+}
+.resetbutton:active{
+    scale: 110%;
+     background-color: aliceblue;
+    color: black;
+}
+.equalbutton:hover{
+
+    background-color: aliceblue;
+    color: black;
+
+}
+.inputbutton:hover{
+      background-color: aliceblue;
+    color: black;
+
+}
+.equalbutton:active{
+    scale: 110%;
+     background-color: aliceblue;
+    color: black;
+
+}
+.inputbutton:active{
+      scale: 110%;
+     background-color: aliceblue;
+    color: black;
+}
+#displaytext{
+    text-align: center;
+    margin-top: 35px;
+    color: aliceblue;
+    font-size: xx-large;
+
+}
+.equal{
+    display: inline;
+}
+body{
+    background-image:url(images/minimalistic\ square\ patterns\ with\ alternating\ colors\ of\ neon\ green\ and\ bright\ silver.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.calculator{
+    align-items: center;
+    margin-left: 175px;
+}
+#summa{
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+#thappuney{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
