@@ -89,15 +89,27 @@ function clickedequal(){
     let result = eval(display.innerText);
     if(result==Infinity){
              var x =document.getElementById("thappuney");
-    x.style.display="block";
-    var y = document.getElementById("asari");
-    y.pause();
-    y.currentTime=0;
-    x.play();
-    setTimeout(()=>clickedreset(true),1000);
+            x.style.display="block";
+            var y = document.getElementById("asari");
+            y.pause();
+            y.currentTime=0;
+          x.play();
+          setTimeout(()=>clickedreset(true),1000);
     }
+    
     else{
-    document.getElementById("asari").play();
+          if(display.innerText=="1+1"){
+            var video = document.getElementById("thappuney");
+            video.src="videos/0528.mp4"
+            video.style.display="block";
+            video.play()
+            setTimeout(()=>clickedreset(true),6000);
+
+          }
+          else{
+              document.getElementById("asari").play();
+          }
+    
     }
     display.innerText = result;
   }
@@ -126,7 +138,9 @@ function clickedreset(flag){
     display.innerText=""
     display.style.color="white";
     var x =document.getElementById("thappuney");
+    x.src = "videos/thappuney.mp4"
     x.style.display="none";
+    
 
 
 }
