@@ -53,24 +53,28 @@ function clicked8(){
 }
 function clicked9(){
     display.innerText+=9;
-   var x= document.getElementById("a9");
-   x.play();
+   //var x= document.getElementById("a9");
+   //x.play();
+   console.log("sensored");
 }
 function clickedplus(){
    display.innerText+= '+';
-    var x= document.getElementById("aplus");
-   x.play();
+   // var x= document.getElementById("aplus");
+   //x.play();
+    console.log("sensored");
 } 
 function clickedminus(){
     display.innerText+='-';
-     var x= document.getElementById("aminus");
-   x.play();
+  //   var x= document.getElementById("aminus");
+  // x.play();
+     console.log("sensored");
     
 }
 function clickedmultiply(){
     display.innerText+='*';
-    var x= document.getElementById("across");
-    x.play();
+   // var x= document.getElementById("across");
+    //x.play();
+     console.log("sensored");
 }
 function clickeddivide(){
     display.innerText+='/';
