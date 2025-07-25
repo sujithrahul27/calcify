@@ -2,7 +2,7 @@
 
 A creative take on the classic calculator project, built with a fun, musical twist using vanilla HTML, CSS, and JavaScript.
 
-**► View Live Demo** *(Add your GitHub Pages link here once you deploy it)*
+**► View Live Demo** *https://sujithrahul27.github.io/calcify/*
 
 ---
 
