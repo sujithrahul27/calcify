@@ -1,139 +1,109 @@
-h1{
-    color:red;
-    text-align: center;
-}
-.display{
-    
-    width:75%;
-    height: 100px;
-    background-color: darkgreen;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
-    overflow: hidden;
-   
-}
-.input{
-    width: 75%;
-    height: 500px;
-    border: 5px black solid;
-    
-    background-color: black;
-    opacity: 90%;
-    display: flex;
-    flex-direction: column;
-    flex-basis: auto;
-    align-items: center;
-}
-.row{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin-top: 2%;
-
-    
-
-}
-.inputbutton{
-    flex-basis: 19%;
-    margin-right: 10px;
-    height:100%;
-
-    border-radius: 100%;
-    font-size: large;
-    background-color: black;
-    color: white;
-    border: 1px white solid;
-    cursor : pointer;
-    transform: background-color 0.3 ease,scale 0.3 ease;
-
-}
-.equalbutton{
-    margin-left: 30px;
-    width: 150px;
-    height: 75px;
-    font-size: x-large;
-    background-color: green;
-    color: white;
-    border: 1px white solid;
-    cursor : pointer;
-    transition: background-color 0.3 ease,scale 0.3 ease;
-    border-radius: 3px;
-    display: inline;
-}
-.resetbutton{
-     
-    width: 150px;
-    height: 75px;
-    font-size: large;
-    background-color: red;
-    color: white;
-    border: 1px white solid;
-    cursor : pointer;
-    transition: background-color 0.3 ease,scale 0.3 ease;
-    border-radius: 3px;
-    display: inline;
-}
-.resetbutton:hover{
-     background-color: aliceblue;
-    color: black;
-}
-.resetbutton:active{
-    scale: 110%;
-     background-color: aliceblue;
-    color: black;
-}
-.equalbutton:hover{
-
-    background-color: aliceblue;
-    color: black;
-
-}
-.inputbutton:hover{
-      background-color: aliceblue;
-    color: black;
-
-}
-.equalbutton:active{
-    scale: 110%;
-     background-color: aliceblue;
-    color: black;
-
-}
-.inputbutton:active{
-      scale: 110%;
-     background-color: aliceblue;
-    color: black;
-}
-#displaytext{
-    text-align: center;
-    margin-top: 35px;
-    color: aliceblue;
-    font-size: xx-large;
-
-}
-.equal{
-    display: inline;
-}
-body{
-    background-image:url(images/minimalistic\ square\ patterns\ with\ alternating\ colors\ of\ neon\ green\ and\ bright\ silver.png);
+/* --- General Body and Font Styles --- */
+body {
+    background-image: url(images/minimalistic\ square\ patterns\ with\ alternating\ colors\ of\ neon\ green\ and\ bright\ silver.png);
     background-position: center;
     background-size: cover;
-
+    font-family: Arial, sans-serif; /* Added for consistency */
 }
-.calculator{
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* --- Main Calculator Container --- */
+.calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem auto; /* Added margin for spacing */
+    padding: 1rem;
+    max-width: 500px; /* Prevents it from becoming too wide on large screens */
+    width: 90%; /* Allows it to shrink on smaller screens */
+}
+
+/* --- Display Screen --- */
+.display {
+    width: 100%; /* Make it fill the container */
+    min-height: 100px; /* Use min-height instead of fixed height */
+    background-color: darkgreen;
+    border: 5px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#displaytext {
+    color: aliceblue;
+    font-size: 2.5rem; /* Using rem for scalable font size */
+    word-wrap: break-word; /* Prevents long numbers from overflowing */
+}
+
+/* --- Input Area with all Buttons --- */
+.input {
     width: 100%;
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Use rgba for opacity */
+    border: 5px black solid;
+    padding: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Use gap for consistent spacing between rows */
 }
-#summa{
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Use gap for spacing between buttons */
+}
+
+/* --- General Button Styling --- */
+.inputbutton, .equalbutton, .resetbutton {
+    border: 1px white solid;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbutton:hover, .equalbutton:hover, .resetbutton:hover {
     background-color: aliceblue;
-    border-radius: 5px;
+    color: black;
 }
-#thappuney{
+
+.inputbutton:active, .equalbutton:active, .resetbutton:active {
+    transform: scale(1.1);
+}
+
+/* --- Specific Button Styles --- */
+.inputbutton {
+    flex-grow: 1; /* Allows buttons to grow and fill space */
+    aspect-ratio: 1 / 1; /* Makes the button a perfect circle */
+    border-radius: 50%;
+    background-color: black;
+}
+
+.equalbutton, .resetbutton {
+    flex-grow: 1; /* Allow these buttons to grow as well */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.equalbutton {
+    background-color: green;
+}
+
+.resetbutton {
+    background-color: red;
+}
+
+/* --- Background Image (Thappuney) --- */
+#thappuney {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -141,4 +111,30 @@ body{
 }
 
 
+/* ========================================= */
+/* --- Media Query for Mobile Devices --- */
+/* ========================================= */
+/* On screens smaller than 600px, these styles will apply */
 
+@media (max-width: 600px) {
+    .calculator {
+        width: 95%; /* Take up more screen width on mobile */
+        padding: 0.5rem;
+    }
+
+    #displaytext {
+        font-size: 2rem; /* Slightly smaller font for smaller displays */
+    }
+
+    .input {
+        gap: 0.75rem; /* Reduce gap between rows on mobile */
+    }
+    
+    .row {
+        gap: 0.75rem; /* Reduce gap between buttons on mobile */
+    }
+
+    .inputbutton, .equalbutton, .resetbutton {
+        font-size: 1.2rem;
+    }
+}
